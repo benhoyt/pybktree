@@ -17,6 +17,11 @@ Example usage:
     >>> sorted(tree.find(13, 1))  # find elements at most 1 bit away from element 13
     [(1, 5), (1, 15)]
 
+For large trees and fairly small N when calling ``find()``, using a BKTree is
+much faster than doing a linear search. This is especially good when you're
+de-duping a few hundred thousand photos -- with a linear search that would
+become a very slow, O(N²) operation. With a BKTree, it's more like O(N log N).
+
 Read the code in `pybktree.py`_ for more details – it's pretty small!
 
 Other BK-tree modules I found on GitHub while writing this one:
