@@ -36,8 +36,9 @@ Other BK-tree modules I found on GitHub while writing this one:
 
 * `ahupp/bktree`_: this one is pretty good, but it's not on PyPI, and it's
   recursive
-* `ryanfox/bktree_: this one is hard to customize, ``search()`` doesn't return
-  distances, it's slower, and was buggy (though I think he fixed it recently)
+* `ryanfox/bktree`_: this one is hard to customize, ``search()`` doesn't
+  return distances, it's slower, and was buggy (though I think he fixed it
+  recently)
 
 pybktree was written by `Ben Hoyt`_ for `Jetsetter`_ and is licensed with a
 permissive MIT license (see `LICENSE.txt`_).
