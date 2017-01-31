@@ -48,8 +48,8 @@ permissive MIT license (see `LICENSE.txt`_).
 .. _blog article on BK-trees: http://blog.notdot.net/2007/4/Damn-Cool-Algorithms-Part-1-BK-Trees
 .. _on the Python Package Index (PyPI): https://pypi.python.org/pypi/pybktree
 .. _pybktree.py: https://github.com/Jetsetter/pybktree/blob/master/pybktree.py
-.. _ahupp/bktree: https://github.com/ahupp/bktree/blob/master/bktree.py
-.. _ryanfox/bktree: https://github.com/ryanfox/bktree/blob/master/bktree/bktree.py
+.. _ahupp/bktree: https://github.com/ahupp/bktree
+.. _ryanfox/bktree: https://github.com/ryanfox/bktree
 .. _Ben Hoyt: http://benhoyt.com/
 .. _Jetsetter: http://www.jetsetter.com/
 .. _LICENSE.txt: https://github.com/Jetsetter/pybktree/blob/master/LICENSE.txt
