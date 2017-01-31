@@ -12,6 +12,10 @@ from collections import deque
 from operator import itemgetter
 
 
+__all__ = ['hamming_distance', 'BKTree']
+
+__version__ = '1.0'
+
 _getitem0 = itemgetter(0)
 
 
@@ -25,7 +29,7 @@ def hamming_distance(x, y):
     return bin(x ^ y).count('1')
 
 
-class BKTree:
+class BKTree(object):
     """BK-tree data structure that allows fast querying of matches that are
     "close" given a function to calculate a distance metric (e.g., Hamming
     distance or Levenshtein distance).
