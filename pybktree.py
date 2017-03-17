@@ -82,6 +82,7 @@ class BKTree(object):
             self.tree = (item, {})
             return
 
+        # Slight speed optimization -- avoid lookups inside the loop
         _distance_func = self.distance_func
 
         while True:
@@ -120,6 +121,7 @@ class BKTree(object):
         candidates = deque([self.tree])
         found = []
 
+        # Slight speed optimization -- avoid lookups inside the loop
         _candidates_popleft = candidates.popleft
         _candidates_extend = candidates.extend
         _found_append = found.append
@@ -155,6 +157,7 @@ class BKTree(object):
 
         candidates = deque([self.tree])
 
+        # Slight speed optimization -- avoid lookups inside the loop
         _candidates_popleft = candidates.popleft
         _candidates_extend = candidates.extend
 
