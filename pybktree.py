@@ -14,7 +14,7 @@ from operator import itemgetter
 
 __all__ = ['hamming_distance', 'BKTree']
 
-__version__ = '1.0'
+__version__ = '1.1'
 
 _getitem0 = itemgetter(0)
 
