@@ -25,6 +25,21 @@ Example usage:
     >>> sorted(tree.find(13, 1))  # find elements at most 1 bit away from element 13
     [(1, 5), (1, 15)]
 
+If you need to track the ID, key, or filename of the original item, use a
+tuple or namedtuple. Repeating the above example with an ``Item`` namedtuple:
+
+.. code:: python
+
+    >>> import collections
+    >>> Item = collections.namedtuple('Item', 'bits id')
+    >>> def item_distance(x, y):
+    ...     return pybktree.hamming_distance(x.bits, y.bits)
+    >>> tree = pybktree.BKTree(item_distance, [Item(0, 'a'), Item(4, 'b'),
+                                               Item(5, 'c'), Item(14, 'd')])
+    >>> tree.add(Item(15, 'e'))
+    >>> sorted(tree.find(Item(13, 'x'), 1))
+    [(1, Item(bits=5, id='c')), (1, Item(bits=15, id='e'))]
+
 For large trees and fairly small N when calling ``find()``, using a BKTree is
 much faster than doing a linear search. This is especially good when you're
 de-duping a few hundred thousand photos -- with a linear search that would
