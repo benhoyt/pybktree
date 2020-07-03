@@ -43,7 +43,13 @@ tuple or namedtuple. Repeating the above example with an ``Item`` namedtuple:
 For large trees and fairly small N when calling ``find()``, using a BKTree is
 much faster than doing a linear search. This is especially good when you're
 de-duping a few hundred thousand photos -- with a linear search that would
-become a very slow, O(N²) operation. With a BKTree, it's more like O(N log N).
+become a very slow, O(N) for every photo, so O(N²) in total. A lookup in a
+BKTree is generally much less for small distance thresholds. (See Maximilian
+Knespel's `detailed analysis`_.)
+
+fraction of O(N) that depends on the distance/tolerance.
+
+more like O(N log N).
 
 Read the code in `pybktree.py`_ for more details – it's pretty small!
 
@@ -68,3 +74,4 @@ permissive MIT license (see `LICENSE.txt`_).
 .. _Ben Hoyt: http://benhoyt.com/
 .. _Jetsetter: http://www.jetsetter.com/
 .. _LICENSE.txt: https://github.com/Jetsetter/pybktree/blob/master/LICENSE.txt
+.. _detailed analysis: https://github.com/Jetsetter/pybktree/issues/5
