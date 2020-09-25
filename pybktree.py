@@ -5,7 +5,7 @@ For example usage, see README.rst.
 This code is licensed under a permissive MIT license -- see LICENSE.txt.
 
 The pybktree project lives on GitHub here:
-https://github.com/Jetsetter/pybktree
+https://github.com/benhoyt/pybktree
 """
 
 from collections import deque

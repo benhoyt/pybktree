@@ -59,17 +59,16 @@ Other BK-tree modules I found on GitHub while writing this one:
   return distances, it's slower, and was buggy (though I think he fixed it
   recently)
 
-pybktree was written by `Ben Hoyt`_ for `Jetsetter`_ and is licensed with a
+pybktree was written by `Ben Hoyt`_ and is licensed with a
 permissive MIT license (see `LICENSE.txt`_).
 
 
 .. _BK-tree: https://en.wikipedia.org/wiki/BK-tree
 .. _blog article on BK-trees: http://blog.notdot.net/2007/4/Damn-Cool-Algorithms-Part-1-BK-Trees
 .. _on the Python Package Index (PyPI): https://pypi.python.org/pypi/pybktree
-.. _pybktree.py: https://github.com/Jetsetter/pybktree/blob/master/pybktree.py
+.. _pybktree.py: https://github.com/benhoyt/pybktree/blob/master/pybktree.py
 .. _ahupp/bktree: https://github.com/ahupp/bktree
 .. _ryanfox/bktree: https://github.com/ryanfox/bktree
 .. _Ben Hoyt: http://benhoyt.com/
-.. _Jetsetter: http://www.jetsetter.com/
-.. _LICENSE.txt: https://github.com/Jetsetter/pybktree/blob/master/LICENSE.txt
-.. _detailed analysis: https://github.com/Jetsetter/pybktree/issues/5
+.. _LICENSE.txt: https://github.com/benhoyt/pybktree/blob/master/LICENSE.txt
+.. _detailed analysis: https://github.com/benhoyt/pybktree/issues/5

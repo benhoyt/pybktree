@@ -34,7 +34,7 @@ setup(
     version=version,
     author='Ben Hoyt',
     author_email='benhoyt@gmail.com',
-    url='https://github.com/Jetsetter/pybktree',
+    url='https://github.com/benhoyt/pybktree',
     license='MIT License',
     description='BK-tree data structure to allow fast querying of "close" matches',
     long_description=long_description,
