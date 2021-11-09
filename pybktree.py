@@ -88,6 +88,8 @@ class BKTree(object):
         while True:
             parent, children = node
             distance = _distance_func(item, parent)
+            if distance == 0:
+                break
             node = children.get(distance)
             if node is None:
                 children[distance] = (item, {})
